@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando Silvestre, Vitor Salesi">
+    <meta name = "description" content = "P2">
+    <meta name = "keywords" content = "playstation">
+    <title>Atividade P2 - Página 1 (index)</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: lightsteelblue;
+
+        }
+        
+        a{
+            color: royalblue;
+            text-decoration: none;
+        }
+        
+        a:hover{
+            color: #1e62a3;
+            text-shadow: 1px 1px black;
+            
+        }
+        
+        header{
+            text-align: center;
+            background-image: url("imagens/playstation.png");
+            background-size: cover;
+            background-position: center;
+            height: 100px;
+            padding: 50px;
+        }
+
+        header h1{
+            font-size: 50px;
+            margin-top: 10px;
+            color: white;
+            text-shadow: 4px 4px black;
+        }
+        
+        nav ul{
+            border-left: solid;
+            list-style-type: none;
+            background-color: #1e62a3;
+            overflow: hidden;
+            margin: 0;
+            padding: 0px;
+
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 30px;
+            display: inline-block;
+        }
+
+        nav li{
+            float: left;
+            border-right: solid;
+            border-top: solid;
+            border-bottom: solid;
+        }
+        
+        li:nth-child(6){
+            background-color:darkorange;
+           
+        }
+
+        li:last-child{
+            background-color: rgb(201, 38, 87);
+
+        }
+
+        nav a:hover{
+            background-color: white;
+            color: #1e62a3;
+            text-shadow: 1px 1px black;
+            
+        }
+        
+        img{
+            display: block;
+            margin: auto;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .row{
+            padding: 0 20px;
+        }
+
+        section{
+            display: inline-block;
+            width: 75%;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 35px;
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 1.5;
+
+        }
+
+        aside{
+            display: inline-block;
+            position: absolute;
+            margin-left:-5%;
+            width: 30%;
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+        
+        article{
+            border: 2px solid black;
+            margin-bottom: 40px;
+        }
+        
+        div.card{
+            border: 2px solid black;
+        }
+        
+
+        .card{
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+
+        }
+
+        footer{
+            padding: 20px;
+            background: #1e62a3;
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+
+        }
+
+        footer dt{
+            font-weight: bold;
+
+        }
+
+        footer a,
+        dd{
+            margin-top: 10px;
+            margin-left: 0;
+            text-decoration: none;
+            color: white;
+
+        }
+        
+        
+        @media screen and (max-width: 1024px){
+            
+            h2{
+                font-size: 1.7em;
+            }
+            
+            section{
+                font-size: 20px;
+                width: 100%;
+            }
+
+            aside{
+                margin-left: auto;
+                width: 60%;
+                position: static;
+            }
+
+            nav ul,
+            nav li{
+                font-size: 25px;
+                float: none;
+                text-align: center;
+            }
+        }
+        
+        @media screen and (max-width: 300px){
+            
+            header h1{
+                font-size: 30px;
+            }
+            
+            section{
+                font-size: 12px;
+            }
+            
+            h2{
+                font-size: 1.5em;
+            }
+            
+            aside{
+                width: 90%;
+            }
+            nav ul,
+            nav li{
+                font-size: 15px;
+            }
+        }
+            
+    </style>
+
+</head>
+
+<body>
+    <header id="inicio">
+        <h1>Playstation</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#ps1">Playstation 1</a></li>
+            <li><a href="#ps2">Playstation 2</a></li>
+            <li><a href="#ps3">Playstation 3</a></li>
+            <li><a href="#ps4">Playstation 4</a></li>
+            <li><a href="#ps5">Playstation 5</a></li>
+            <li><a href="acessorios.html" target="_blank">Acessórios Nostálgicos</a></li>
+            <li><a href="formulario.html" target="_blank">Participe da Pesquisa</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <section>
+            <article class="card">
+                <h2 id="ps1">Playstation 1</h2>
+                <figure>
+                    <img src="imagens/ps1.png" alt="PS1">
+                </figure>
+                <p>A data de lançamento do Playstation 1 foi em 3 de dezembro de 1994 no Japão, e em 9 de setembro de
+                    1995 na américa do norte custando 299 dólares e vendendo mais de 100 mil unidades na sua primeira
+                    semana. Vale ressaltar que um dos diferenciais do Playstation 1 era que o mesmo além de ser um
+                    videogame também era um leitor de CDs musicais.</p>
+                <p>A especificação técnica do Playstation 1, onde o mesmoapresentava uma CPU de 32 bits rodando a
+                    33.8688MHz, uma memória RAM de 2 MB (16 Mbits), a ROM de seu sistema operacional possuía 4 Mbits, um
+                    leitor de CD-ROM, seu processador gráfico (GPU) era uma unidade de 1 MB de VRAM com trabalhava com
+                    GTE (3D Geometry Transform Engine) , possuía 24 canais de sons com 4 Mbits de RAM, tinha suas
+                    resoluções máximas de tela em 640 x 480 em uma palheta de 16.7 milhões de cores, conseguia
+                    renderizar 360 mil polígonos por segundo, e necessitava de cartões de memória para armazenamento de
+                    dados de seus jogos, cartões esses conhecidos como Memory Cards, que conseguiam armazenar 128 KB em
+                    sua memória, tendo 2 slots de entrada desses Memory Cards.</p>
+                <a href="#inicio">Voltar ao início</a>
+            </article>
+
+            <article class="card">
+                <h2 id="ps2">Playstation 2</h2>
+                <figure>
+                    <img src="imagens/PS2.jpg" alt="PS2">
+                </figure>
+                <p>O Playstation 2 foi lançado na virada do milênio, no dia 4 de março de 2000 no Japão, e no final do
+                    mesmo ano em outubro e novembro, ele era lançado nos Estados Unidos e Europa respectivamente no
+                    valor de 299 dólares. É importante lembrar que assim como seu antecessor, o Playstation 2 também fez
+                    muito sucesso e mais uma vez inovou trazendo consigo um leitor de DVD, possibilitando os compradores
+                    mais uma vez ter além de um vídeo game, um aparelho para assistir filmes, escutar músicas, além da
+                    possibilidade de jogar online, através de entrada para cabo de internet.</p>
+                <p>As especificações do console com uma CPU MIPS R5900 de 128 bits rodando a 300 MHz, um sistema de
+                    memória RAM de 32 MB, sendo sua placa de vídeo dedicada (Graphics Synthesizer) a 150 Mhz, com 4 MB
+                    de eDRAM capaz de renderizar gráficos 3D em 66 milhões de polígonos por segundo com a mesma palheta
+                    de cores que seu antecessor (16.7 milhões) em uma resolução máxima de 1280 x 1024, seu som possuía
+                    48 canais de vozes, continua usando cartões de memórias para salvar seus jogos, porém agora esses
+                    Memory Cards possuíam 8MB, tendo ainda dois slots para eles, e agora o console tinha 2 entradas USB.
+                </p>
+                <a href="#inicio">Voltar ao início</a>
+            </article>
+
+            <article class="card">
+                <h2 id="ps3">Playstation 3</h2>
+                <figure>
+                    <img src="imagens/PS3.jpg" alt="PS3">
+                </figure>
+                <p>O Playstation 3 foi o terceiro console da Sony, sucessor do Playstation 2. Foi lançado oficialmente
+                    no Japão no dia 11 de novembro de 2006, na América do Norte em 17 de novembro do mesmo ano e na
+                    Europa em 23 de março de 2007. Entre as novidades desse console para a geração anterior são:
+                    migração da mídia de DVD para Blu-Ray com capacidade de 50GB, disco rígido interno (HDD) para
+                    armazenamento de dados ou instalações de jogos, compatibilidade com o sistema Bluetooth, aumento da
+                    resolução para até 1080 pixels através de saída HDMI e uma plataforma on-line chamada Playstation
+                    Network (PSN) em que o usuário pode comprar jogos, ouvir músicas, assistir filmes e jogar online com
+                    outras pessoas.</p>
+                <p>As especificação técnica do Playstation 3 são: um CPU Cell rodando a 3.2GHZ (que será em seguida mais
+                    discutido), com 512KB L2, 7 x SPE a 3.2GHZ, 7 x 128b SMID GPRs, 7 x 256KB SRAM para SPE, com uma
+                    performance total de 218 GFLOPS. Seu processador gráfico (GPU) era uma RSX rodando a 550MHZ, com
+                    desempenho de até 1.8 TFLOPS, capacidade Full HD (1080p) para 2 canais e renderização de 128 bits.
+                    Possuía som Dolby 5.1ch surround. Uma Memória Ram de 256MB XDR e 256 MB GDDR3 VRAM. Possuía disco
+                    rígido interno (HDD) para armazenamento, variando a capacidade entre os modelos de 20GB até 500GB.
+                    Porta Gigabit para Ethernet, Bluetooth e Wi-fi integrado. Possuía saída HDMI, saída de áudio/vídeo
+                    analógica e óptico digital. Uma curiosidade é de que os modelos de 20 e 60GB possuam 4 portas USB,
+                    porém os modelos com 40 e 80 GB e todos os modelos lançados após agosto de 2008 possuíam apenas 2
+                    portas USB.</p>
+                <a href="#inicio">Voltar ao início</a>
+            </article>
+
+            <article class="card">
+                <h2 id="ps4">Playstation 4</h2>
+                <figure>
+                    <img src="imagens/PS4.png" alt="PS4">
+                </figure>
+                <p>Lançado no dia 15 de novembro de 2013, o Playstation 4 e a quarta geração dos consoles Sony, com o
+                    console inovador com led´s na parte de cima o Playstation 4 vem com uma cara mais futurística
+                    diferente do seu antecessor Playstation 3, com seu valor inicial de 399 dólares. Vale ressaltar que
+                    no Brasil seu preço inicial era de aproximadamente 4 mil reais.</p>
+                <p>O console Playstation 4 chega com 305 x 275 x 53 mm de dimensão e com peso de 2,8 kg, com sistema
+                    operacional Orbis OS, uma CPU x86-64 AMD jaguar de 8 núcleos e 1,64 GHz, com uma GPU de 1.84 TFLOPS
+                    AMD Radeon com 800 MHz de frequência, o console chega também com 8 GB RAM GDDR5, e um adicional de
+                    256 MB DDR3 para tarefas em segundo plano, com versões de 500 GB ou 1TB dependendo da configuração
+                    do console, com resolução HDR 1080p e com conexão à internet wi-fi ou a cabo.</p>
+                <a href="#inicio">Voltar ao início</a>
+            </article>
+
+            <article class="card">
+                <h2 id="ps5">Playstation 5</h2>
+                <figure>
+                    <img src="imagens/PS5.jpg" alt="PS5">
+                </figure>
+                <p>O PlayStation 5 é o console mais recende da Sony, lançado no dia 12 de novembro de 2020 na América do
+                    Norte e Japão e no resto do mundo em 19 de novembro, sete anos após o lançamento do seu antecessor
+                    PlayStation 4 com muitas melhorias tanto no console quanto no controle. A versão com mídia física
+                    saiu por 499 dólares e a Edição Digital saiu por 399 dólares. No Brasil, foram lançados por
+                    aproximadamente R$ 5000 e R$ 4500 respectivamente.</p>
+                <p>O console chega com uma GPU AMD Radeon, essa GPU opera em uma frequência de até 2,23GHz e entrega
+                    10,3 TFLOPS. Já a CPU é uma AMD Ryzen Zen 2, possui 8 núcleos e 16 threads e opera em até 3,5GHz,
+                    esse console também conta com um sistema de memória composta por uma GDDR6 de 16GB (compartilhada),
+                    o sistema de armazenamento conta com um SSD integrado de 825 GB com um controlador SSD personalizado
+                    que reduz bastante o tempo de carregamento dos jogos.</p>
+                <a href="#inicio">Voltar ao início</a>
+            </article>
+        </section>
+        <aside>
+                <div class="card">
+                <h3>Links relacionados</h3>
+                <figure>
+                    <a href="https://www.techtudo.com.br/listas/2021/02/os-dez-melhores-jogos-de-todos-os-tempos-segundo-o-metacritic.ghtml"
+                        target="_blank"><img src="imagens/melhores.jpg" alt="Melhores Jogos"></a><br>
+                    <a href="https://www.youtube.com/watch?v=oqDADe1CL2M" target="_blank"><img
+                            src="https://i2.wp.com/www.gry-online.pl/Galeria/Html/Wiadomosci/95180328.jpg?w=750&ssl=1"
+                            alt="Playstations"></a>
+                </figure>
+                </div>
+        </aside>
+    </div>
+    <footer>
+        <address>
+            <dl>
+                <dt>E-mail para contato:</dt>
+                <dd>Fernando Silvestre: <a href="mailto:fernando.silvestre@fatec.sp.gov.br">fernando.silvestre@fatec.sp.gov.br</a>
+                </dd>
+                <dd>Vitor Salesi: <a href="mailto:vitor.salesi@fatec.sp.gov.br">vitor.salesi@fatec.sp.gov.br</a></dd>
+            </dl>
+        </address>
+    </footer>
+
+</body>
+
+</html>

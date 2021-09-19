@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando Silvestre, Vitor Salesi">
+    <title>Atividade P2 - Pagina 2</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: lightsteelblue;
+
+        }
+        
+         a{
+            color: royalblue;
+            text-decoration: none;
+        }
+        
+         a:hover{
+            color: #1e62a3;
+            text-shadow: 1px 1px black;
+            
+        }
+
+        header {
+            text-align: center;
+            background-image: url("imagens/playstation.png");
+            background-size: cover;
+            background-position: center;
+            height: 100px;
+            padding: 50px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin-top: 10px;
+            color: white;
+            text-shadow: 4px 4px black;
+        }
+        
+        nav ul {
+            border-left: solid;
+            list-style-type: none;
+            background-color: #1e62a3;
+            overflow: hidden;
+            margin: 0;
+            padding: 0px;
+
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 30px;
+            display: inline-block;
+
+        }
+
+        nav li {
+            float: left;
+            border-right: solid;
+            border-top: solid;
+            border-bottom: solid;
+        }
+        
+        li:first-child{
+            background-color:darkorange;
+        }
+
+        li:nth-child(7){
+            background-color: rgb(201, 38, 87);
+
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #1e62a3;
+            text-shadow: 1px 1px black;
+        }
+        
+        
+        img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .row {
+            padding: 0 20px;
+        }
+
+        section {
+            display: inline-block;
+            width: 75%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 1.5;
+
+        }
+
+        aside {
+            display: inline-block;
+            position: absolute;
+            margin-left:-5%;
+            width: 30%;
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+        
+        article{
+            border: 2px solid black;
+            margin-bottom: 40px;
+        }
+        
+         div.card{
+            border: 2px solid black;
+        }
+        
+
+        .card {
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+
+        }
+
+        footer {
+            padding: 20px;
+            background: #1e62a3;
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+
+        }
+
+        footer dt {
+            font-weight: bold;
+
+        }
+
+        footer a,
+        dd {
+            margin-top: 10px;
+            margin-left: 0;
+            text-decoration: none;
+            color: white;
+
+        }
+
+
+        @media screen and (max-width: 1024px) {
+
+            h2{
+                font-size: 1.7em;
+            }
+            
+            section{
+                font-size: 20px;
+                width: 100%;
+            }
+
+            aside{
+                margin-left: auto;
+                width: 60%;
+                position: static;
+            }
+
+            nav ul,
+            nav li{
+                font-size: 25px;
+                float: none;
+                text-align: center;
+            }
+        }
+        
+        @media screen and (max-width: 300px) {
+            
+            header h1{
+                font-size: 30px;
+            }
+            
+            section{
+                font-size: 12px;
+            }
+            
+            h2{
+                font-size: 1.5em;
+            }
+            
+            aside{
+                width: 90%;
+            }
+            nav ul,
+            nav li{
+                font-size: 15px;
+            }
+        }
+            
+    </style>
+
+</head>
+
+<body>
+    <header id="inicio">
+        <h1>Playstation</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_blank">Página Inicial</a></li>
+            <li><a href="#pocket">Pocketstation</a></li>
+            <li><a href="#gun">Guncon</a></li>
+            <li><a href="#multitap">Playstation Multitap</a></li>
+            <li><a href="#link">PlayStation Link Cable</a></li>
+            <li><a href="#gameshark">GameShark</a></li>
+            <li><a href="formulario.html" target="_blank">Participe da Pesquisa</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <section>
+            <article class="card">
+                <h2 id="pocket">Pocketstation</h2>
+                <figure>
+                    <img src="imagens/pocket.png" alt="PocketStation">
+                </figure>
+                <p>Talvez o acessório mais interessante do PlayStation, o PocketStation era um dispositivo portátil, lançado em 1999, que funcionava como Memory Card. Inspirado pelo unidade de memória VMU do Sega Dreamcast, o Pocket Station permitia jogar minigames simples em uma tela em preto e branco, visualmente parecidos com Tamagotchi. Os dados desses minigames retornavam para o console e podiam oferecer bônus em jogos como Final Fantasy VIII, Crash Bandicoot 3: Warped e Street Fighter Alpha 3 (no Japão).</p>    
+                <a href="#inicio">Voltar ao início</a>
+            </article>
+
+            <article class="card">
+                <h2 id="gun">Guncon</h2>
+                <figure>
+                    <img src="imagens/gun.png" alt="GunCon">
+                </figure>
+                <p>A pistola Guncon da Namco era um periférico relativamente conhecido do PlayStation, usado principalmente para jogar a série de tiro Time Crisis. Semelhante à pistola Stunner do Sega Saturn para Virua Cop, o acessório podia ser usado para atirar diretamente na tela em games como Time Crisis: Project Titan. A GunCon também era compatível com outros jogos, como Point Blank, Die Hard Trilogy 2, Extreme Ghostbusters, Judge Dredd e mais.</p>
+                <a href="#inicio">Voltar ao início</a>
+            </article>
+
+            <article class="card">
+                <h2 id="multitap">Playstation Multitap</h2>
+                <figure>
+                    <img src="imagens/multitap.png" alt="Multitap">
+                </figure>
+                <p>Atualmente, com a geração de controles sem fio, parece distante a época em que o número de jogadores era limitado pelo número de portas que havia em um console. Para jogar games com mais de duas pessoas, era preciso adquirir um acessório próprio, como o PlayStation Multitap. Usuários que tinham o periférico podiam jogar games com quatro jogadores, como Crash Team Racing, Crash Bash, Twisted Metal 3 e 4, entre outros.</p>
+                <a href="#inicio">Voltar ao início</a>
+            </article>
+
+            <article class="card">
+                <h2 id="link">PlayStation Link Cable</h2>
+                <figure>
+                    <img src="imagens/link.png" alt="PlayStation Link Cable">
+                </figure>
+                <p>Uma forma menos conhecida de multiplayer no PSOne era por meio do PlayStation Link Cable, um cabo que permitia ligar dois consoles entre si. Era preciso ter dois PlayStation, duas TVs e duas cópias do jogo. A vantagem é que cada jogador podia usar toda a sua tela, sem dividi-la. Entre alguns dos games mais populares que tinham suporte para a função estavam R4: Ridge Racer Type 4, Duke Nukem: Total Meltdown, Cool Boarders 2, Twisted Metal 3, San Francisco Rush: Extreme Racing, Wipeout, entre outros.</p>
+                <a href="#inicio">Voltar ao início</a>
+            </article>
+
+            <article class="card">
+                <h2 id="gameshark">GameShark</h2>
+                <figure>
+                    <img src="imagens/gameshark.png" alt="GameShark">
+                </figure>
+                <p>Uma marca que realmente marcou a década de 90 e o início dos anos 2000 foi a Mad Catz, uma produtora de diversos acessórios para consoles, entre eles o GameShark. Este periférico editava diretamente o código dos jogos para oferecer algumas vantagens, como vidas infinitas, novos personagens e até partes normalmente inacessíveis de games.</p>
+                <p>Um dos exemplos mais interessantes era o menu "Debug" de Final Fantasy 7, deixado por desenvolvedores, em que era possível analisar vários detalhes do jogo. A primeira versão do dispositivo se conecta à parte de trás do console, mas versões em disco foram lançadas posteriormente.</p>
+                <a href="#inicio">Voltar ao início</a>
+            </article>
+        </section>
+        <aside>
+            <div class="card">
+                <h3>Links relacionados</h3>
+                <figure>
+                    <a href="https://www.techtudo.com.br/listas/2021/02/os-dez-melhores-jogos-de-todos-os-tempos-segundo-o-metacritic.ghtml"
+                        target="_blank"><img src="imagens/melhores.jpg" alt="Melhores Jogos"></a><br>
+                    <a href="https://www.youtube.com/watch?v=oqDADe1CL2M" target="_blank"><img
+                            src="https://i2.wp.com/www.gry-online.pl/Galeria/Html/Wiadomosci/95180328.jpg?w=750&ssl=1"
+                            alt="Playstations"></a>
+                </figure>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <address>
+            <dl>
+                <dt>E-mail para contato:</dt>
+                <dd>Fernando Silvestre: <a href="mailto:fernando.silvestre@fatec.sp.gov.br">fernando.silvestre@fatec.sp.gov.br</a>
+                </dd>
+                <dd>Vitor Salesi: <a href="mailto:vitor.salesi@fatec.sp.gov.br">vitor.salesi@fatec.sp.gov.br</a></dd>
+            </dl>
+        </address>
+    </footer>
+
+</body>
+
+</html>

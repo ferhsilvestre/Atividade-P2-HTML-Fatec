@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width-device-width, initial-scale=1.0">
+        <meta name = "author" content="Vitor Salesi, Fernando Silvestre">
+        <meta name = "description" content = "P2">
+        <meta name = "keywords" content = "formulario">
+
+        <title>Atividade P2 - Página 3(formúlario)</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background: lightsteelblue;
+                background-image: url("imagens/logo_playstation.png");
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: 60% 15%;
+                font-weight: bold;
+            }
+            
+            a{
+                color: royalblue;
+                text-decoration: none;
+            }
+        
+            a:hover{
+                color: #1e62a3;
+                text-shadow: 1px 1px black;
+            }
+
+            header{
+                text-align: center;
+                background-image: url("imagens/playstation.png");
+                background-size: cover;
+                background-position: center;
+                height: 100px;
+                padding: 50px;
+                border-bottom: 3px solid black;
+            }
+            
+            header h1{
+                font-size: 50px;
+                margin-top: 10px;
+                color: white;
+                text-shadow: 4px 4px black;
+            } 
+            
+            label{
+                display:inline-block;
+                 margin: 10px 0 10px 0px;
+            }
+            
+            fieldset{
+                margin-bottom: 1em;
+                border-color: royalblue;
+            }
+                
+            input:focus, textarea:focus{
+                background-color: lightgrey;
+            }
+            
+            legend{
+                color: white;
+                text-shadow: 2px 2px black;
+                font-size: 20px;
+            }
+            
+            
+            h2{
+                color: white;
+                text-shadow: 2px 2px black;
+                text-align: center;
+                font-size: 30px;
+            }
+            
+            form{
+                width: 80%;
+                margin: 0 0 10px 40px;
+            }
+            
+            input, textarea,select{
+                padding: 8px;
+                margin-bottom: 1em;
+                resize: none;
+                border: 2px solid black;
+            }
+
+            input[type=submit],
+            input[type=reset]{
+                color:white;
+                background-color: royalblue;
+                border-radius: 5px;
+                padding: 10px 10px;
+                text-decoration: none;
+                margin: 20px 15px 0 0;
+                cursor: pointer;
+            }
+            
+            #consoles{
+                background-image: url("https://i2.wp.com/www.gry-online.pl/Galeria/Html/Wiadomosci/95180328.jpg?w=750&ssl=1");
+                background-repeat: no-repeat;
+                background-size: 40%;
+                background-position: 85% 35%;
+            }
+            
+            #jogos{
+                background-image: url("https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/article_images/2019/12/playstation-games-decade-retrospective-hero.jpg");
+                background-repeat: no-repeat;
+                background-size: 40%;
+                background-position: 85% 35%;
+            }
+            
+            #voltar{
+                margin: 30px 0px 0px 15px;
+            }
+            
+            footer{
+                padding: 20px;
+                background: #1e62a3;
+                color: white;
+                margin-top: 20px;
+                text-align: center;
+
+            }
+
+            footer a,
+            dd{
+                margin-top: 10px;
+                margin-left: 0;
+                text-decoration: none;
+                color: white;
+            }
+            
+            @media screen and (max-width: 1300px){
+                
+                body {
+                    background-position: 75% 15%;
+                    }
+
+                form{
+                    width: 100%;
+                    margin: auto;
+                    font-size: 20px;
+                }
+
+                #consoles{
+                    background-size: 40%;
+                    background-position: 85% 35%;
+                }
+
+                #jogos{
+                    background-size: 40%;
+                    background-position: 85% 35%;
+                }
+            }
+            
+                
+            @media screen and (max-width: 768px){
+                
+                body {
+                    background-position: 100% 15%;
+                    }
+
+                #consoles{
+                    background-size: 35%;
+                    background-position: 85% 35%;
+                }
+
+                #jogos{
+                    background-size: 35%;
+                    background-position: 85% 35%;
+                }
+            }
+            
+             @media screen and (max-width: 700px){
+                
+                body {
+                    background-image: none;
+                    }
+
+                #consoles{
+                    background-image: none;
+                }
+
+                #jogos{
+                    background-image: none;
+                }
+            }            
+        </style>
+    </head>
+    <body>
+        <header id="inicio">
+            <h1>Playstation</h1>
+        </header>
+        <h2> Participe da Pesquisa abaixo</h2>
+        <form>
+            <section>
+                <fieldset>
+                    <legend> Dados Pessoais </legend>
+                        <label for="nome1">Nome:</label><br>
+                        <input type ="text" id ="nome1" name ="nome" value="" required autofocus placeholder="Digite seu nome" size="30"><br>
+
+                        <label for ="sobrenome">Sobrenome:</label><br>
+                        <input type ="text" id ="sobrenome" name ="sobrenome" value="" required placeholder="Digite seu sobrenome" size="30"><br>
+                    
+                        <label for = "dt_nascimento">Data de Nascimento: </label> <br>
+                        <input type ="date" id ="dt_nascimento" name ="nascimento" value= "" min="1950-01-01" max="2021-01-01" size="30"><br>
+
+                        <label for ="email"> E-mail:</label><br>
+                        <input type ="email" id ="email" name ="email" value="" placeholder="Digite o seu e-mail" value="" size="30"><br>
+                        
+                        <label for="fone">Telefone</label><br>
+                        <input type="text" id="fone" name="fone" required maxlength="11" placeholder="Digite seu número de telefone" size="30" value=""><br>
+
+                        <label for="nacio"> Nacionalidade: </label> <br>
+                        <input type ="text" id ="nacio" name ="nacionalidade" value="" placeholder="Informe sua nacionalidade" value="" size="30"><br>
+                    
+                        <label for ="est_civil"> Estado Civil </label><br> 
+                        <select name="est_civil" id="est_civil">
+                            <option value="casado">Casado</option>
+                            <option value="solteiro" selected>Solteiro</option>
+                            <option value="viuvo">Viúvo</option>
+                        </select><br>
+                </fieldset>
+            </section>
+            <section class="image_ajust">
+                <fieldset id="consoles">
+                    <legend>Consoles</legend>
+                        <label for ="tem_playstation"> Você tem Playstation? </label><br> 
+                        <input type ="radio" name ="tem_playstation" value ="sim" checked>Sim<br>
+                        <input type ="radio" name ="tem_playstation" value ="nao">Não<br>
+                        
+                        <p>Se sim, quais? (Selecione um ou mais) </p>
+                        <input type="checkbox" id="playstation1" name="playstation" value="play1">
+                        <label for="playstation1">Playstation 1</label><br>
+
+                        <input type="checkbox" id="playstation2" name="playstation" value="play2">
+                        <label for="playstation2">Playstation 2</label><br>
+
+                        <input type="checkbox" id="playstation3" name="playstation" value="play3">
+                        <label for="playstation3">Playstation 3</label><br>
+
+                        <input type="checkbox" id="playstation4" name="playstation" value="play4">
+                        <label for="playstation4">Playstation 4</label><br>
+                        
+                        <input type="checkbox" id="playstation5" name="playstation" value="play5">
+                        <label for="playstation5">Playstation 5</label><br>
+                        
+                        <label for ="joga_horas">Você costuma jogar quantas horas por dia?</label><br> 
+                        <select name="joga_horas" id="joga_horas">
+                            <option value="menos_1">Menos de 1 hora</option>
+                            <option value="1_2">1-2 horas</option>
+                            <option value="2_4" selected>2-4 horas</option>
+                            <option value="4_6">4-6 horas</option>
+                            <option value="6_9">6-9 horas</option>
+                            <option value="9_12">9-12 horas</option>
+                            <option value="mais_12">Mais de 12 horas</option>
+                        </select><br>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset id="jogos">
+                     <legend>Jogos</legend>
+                        <label for="jogo_fav">Qual o seu jogo favorito?</label><br>
+                        <input type ="text" id ="jogo_fav" name ="jogo_fav" value="" placeholder="Digite seu jogo favorito" size="30"><br>
+                        
+                        <label for="motivo_fa">Explique o motivo</label> <br>
+                        <textarea id="motivo_fav" name="motivo_fav" rows="8" cols="40"  placeholder="Explique o motivo de esse jogo ser o seu favorito" maxlength="500" value=""></textarea><br>
+                    
+                        <label for="jogo_dec">Qual jogo mais te decepcionou?</label><br>
+                        <input type ="text" id ="jogo_dec" name ="jogo_dec" value="" placeholder="Digite o jogo que mais te decepcionou" size="30"><br>
+                        
+                        <label for="motivo_dec">Explique o motivo</label> <br>
+                        <textarea id="motivo_dec" name="motivo_dec" rows="8" cols="40"  placeholder="Explique por que te decepcionou" maxlength="500" value=""></textarea><br>
+                </fieldset>
+            </section>
+            
+            <section>
+                <legend>Avalie a marca da Sony (0 a 5)</legend>
+                
+                <input type="radio" id="nota0" name="nota0" value="nota0">
+                <label for="nota0">0</label>
+
+                <input type="radio" id="nota1" name="nota1" value="nota1">
+                <label for="nota1">1</label>
+
+                <input type="radio" id="nota2" name="nota2" value="nota2">
+                <label for="nota2">2</label>
+
+                <input type="radio" id="nota3" name="nota3" value="nota3">
+                <label for="nota3">3</label>
+                
+                <input type="radio" id="nota4" name="nota4" value="nota4">
+                <label for="nota4">4</label>
+                
+                <input type="radio" id="nota5" name="nota5" value="nota5">
+                <label for="nota5">5</label><br>
+            </section>
+            
+            <section>
+                <input type="submit" value="Enviar"> 
+                <input type="reset" value="Redefinir">
+            </section>
+        </form>
+    <div id="voltar">
+        <a href="#inicio">Voltar ao Início</a><br>
+        <br>
+        <a href="index.html">Voltar à Pagina Principal</a>
+    </div>
+    <footer>
+        <address>
+            <dl>
+                <dt>E-mail para contato:</dt>
+                <dd>Fernando Silvestre: <a href="mailto:fernando.silvestre@fatec.sp.gov.br">fernando.silvestre@fatec.sp.gov.br</a>
+                </dd>
+                <dd>Vitor Salesi: <a href="mailto:vitor.salesi@fatec.sp.gov.br">vitor.salesi@fatec.sp.gov.br</a></dd>
+            </dl>
+        </address>
+    </footer>
+</body>
+</html>
